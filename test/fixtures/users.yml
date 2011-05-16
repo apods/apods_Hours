@@ -1,0 +1,36 @@
+# == Schema Information
+# Schema version: 20110515222920
+#
+# Table name: users
+#
+#  id                 :integer         not null, primary key
+#  first_name         :string(255)
+#  last_name          :string(255)
+#  encrypted_password :string(255)
+#  password_salt      :string(255)
+#  email              :string(255)
+#  brother_status     :string(255)
+#  peoplesoft_num     :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  encrypted_password: MyString
+  password_salt: MyString
+  email: MyString
+  brother_status: MyString
+  peoplesoft_num: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  encrypted_password: MyString
+  password_salt: MyString
+  email: MyString
+  brother_status: MyString
+  peoplesoft_num: MyString
