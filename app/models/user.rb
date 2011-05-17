@@ -48,6 +48,7 @@ class User < ActiveRecord::Base
     user = find_by_peoplesoft_num(submitted_peoplesoft_num)
     return nil if user.nil?
     return user if user.has_password?(submitted_password)
+    return nil
   end
   
   #Check to see if submitted password is correct

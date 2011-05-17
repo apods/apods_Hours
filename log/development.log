@@ -2187,3 +2187,227 @@ Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:28:30) [GET]
 Rendering template within layouts/main_layout
 Rendering sessions/new
 Completed in 31ms (View: 14, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HoursController#index (for 127.0.0.1 at 2011-05-17 00:46:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"hours"}
+Rendering template within layouts/main_layout
+Rendering hours/index
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-05-17 00:46:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/main_layout
+Rendering users/new
+Completed in 103ms (View: 49, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:46:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 28ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:47:11) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"1321321", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/create
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:52:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 135ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:52:31) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"1321321", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '1321321') LIMIT 1[0m
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 268ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:52:40) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"1321321", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '1321321') LIMIT 1[0m
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 31ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:52:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 25ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HoursController#index (for 127.0.0.1 at 2011-05-17 00:53:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"hours"}
+Rendering template within layouts/main_layout
+Rendering hours/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:53:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 28ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:53:34) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"1321321", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '1321321') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 45ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:53:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 108ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:53:42) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"1321321", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '1321321') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 24ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:53:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:54:06) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"1561614", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '1561614') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:54:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 37ms (View: 17, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:54:17) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"1561614", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '1561614') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 23ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:54:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 28ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-05-17 00:54:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/main_layout
+Rendering users/new
+Completed in 115ms (View: 19, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-05-17 00:55:02) [POST]
+  Parameters: {"commit"=>"Register", "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"users", "user"=>{"peoplesoft_num"=>"2222222", "password_confirmation"=>"[FILTERED]", "last_name"=>"McJack", "password"=>"[FILTERED]", "email"=>"alrightythen@funnyemails.ass", "first_name"=>"Jack"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'alrightythen@funnyemails.ass') LIMIT 1[0m
+  [4;35;1mUser Load (2.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '2222222') LIMIT 1[0m
+Rendering template within layouts/main_layout
+Rendering users/new
+Completed in 240ms (View: 29, DB: 3) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-05-17 00:55:17) [POST]
+  Parameters: {"commit"=>"Register", "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"users", "user"=>{"peoplesoft_num"=>"3333333", "password_confirmation"=>"[FILTERED]", "last_name"=>"McJack", "password"=>"[FILTERED]", "email"=>"alrightythen@funnyemails.ass", "first_name"=>"Jack"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'alrightythen@funnyemails.ass') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '3333333') LIMIT 1[0m
+  [4;36;1mUser Create (46.5ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "peoplesoft_num", "updated_at", "password_salt", "brother_status", "last_name", "first_name", "email") VALUES('2bd753c264db8ed11ff8637b9832596e7856cce7e0ce2503b1f64b75ecd2d109', '2011-05-17 07:55:17', '3333333', '2011-05-17 07:55:17', 'c527146e5b223ddd64e22b2ac944a927d7949e40d3fd95cd87d339da280522cd', NULL, 'McJack', 'Jack', 'alrightythen@funnyemails.ass')[0m
+Redirected to http://localhost:3000/users/5
+Completed in 255ms (DB: 47) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-05-17 00:55:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"users"}
+Rendering template within layouts/main_layout
+Rendering users/show
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/users/5]
+
+
+Processing HoursController#index (for 127.0.0.1 at 2011-05-17 00:55:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"hours"}
+Rendering template within layouts/main_layout
+Rendering hours/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/hours]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:55:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 28ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:55:33) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"3333333", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '3333333') LIMIT 1[0m
+Rendering template within layouts/main_layout
+Rendering sessions/create
+Completed in 36ms (View: 11, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing HoursController#index (for 127.0.0.1 at 2011-05-17 00:55:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"hours"}
+Rendering template within layouts/main_layout
+Rendering hours/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/hours]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:55:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 44ms (View: 18, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:55:50) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"3333333", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '3333333') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 24ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:55:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 30ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-05-17 00:56:01) [POST]
+  Parameters: {"commit"=>"Save changes", "session"=>{"peoplesoft_num"=>"3333332", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"5/Gn9xYbqa9s0pT8iIBLWuOasNtlC++Vq7mUaLKXdwA=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = '3333332') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-05-17 00:56:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main_layout
+Rendering sessions/new
+Completed in 38ms (View: 11, DB: 0) | 200 OK [http://localhost/login]
