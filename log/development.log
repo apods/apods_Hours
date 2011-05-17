@@ -637,3 +637,117 @@ Processing HoursController#index (for 127.0.0.1 at 2011-05-15 22:06:50) [GET]
 Rendering template within layouts/main_layout
 Rendering hours/index
 Completed in 950ms (View: 79, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HoursController#index (for 127.0.0.1 at 2011-05-16 17:32:00) [GET]
+Rendering template within layouts/main_layout
+Rendering hours/index
+Completed in 2543ms (View: 82, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110515222920)
+Migrating to AddEmailUniquenessIndex (20110516015830)
+Migrating to AddPeoplesoftNumUniquenessIndex (20110516015845)
+  [4;36;1mSQL (11.8ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_peoplesoft_num')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (14.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."peoplesoft_num" = 1561614) LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1561614') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1561614') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1561614') LIMIT 1[0m
+  [4;36;1mUser Create (0.8ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "created_at", "peoplesoft_num", "updated_at", "password_salt", "brother_status", "last_name", "first_name", "email") VALUES(NULL, '2011-05-17 02:18:11', '1561614', '2011-05-17 02:18:11', NULL, NULL, 'Sanzi', 'Gino', 'eugene.sanzi@gmail.com')[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '156161' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '15616145' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Update (64.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2011-05-17 02:20:38', "peoplesoft_num" = '1111111', "first_name" = 'G' WHERE "id" = 1[0m
+  [4;36;1mUser Destroy (0.6ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1561614') LIMIT 1[0m
+  [4;35;1mUser Create (5.2ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "peoplesoft_num", "updated_at", "password_salt", "brother_status", "last_name", "first_name", "email") VALUES(NULL, '2011-05-17 02:44:37', '1561614', '2011-05-17 02:44:37', NULL, NULL, 'Sanzi', 'Gino', 'eugene.sanzi@gmail.com')[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.co') LIMIT 1[0m
+  [4;36;1mUser Load (38.9ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1561614') LIMIT 1[0m
+  [4;35;1mUser Load (12.8ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'eugene.sanzi@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'fake.email@email.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111') LIMIT 1[0m
+  [4;35;1mUser Create (0.8ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "peoplesoft_num", "updated_at", "password_salt", "brother_status", "last_name", "first_name", "email") VALUES(NULL, '2011-05-17 03:28:10', '1111111', '2011-05-17 03:28:10', NULL, NULL, 'Collide', 'Should', 'fake.email@email.com')[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" ORDER BY users.id DESC LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'fake.email@email.com' AND "users".id <> 3) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111' AND "users".id <> 3) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'fake.email@email.com' AND "users".id <> 3) LIMIT 1[0m
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."peoplesoft_num" = '1111111' AND "users".id <> 3) LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2011-05-17 03:34:52', "last_name" = 'Fakeman', "first_name" = 'John' WHERE "id" = 3[0m
