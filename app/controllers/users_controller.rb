@@ -6,6 +6,9 @@ class UsersController < ApplicationController
   end
   
   def show
+    if @user.nil?
+      redirect_to login_path
+    end
   end
   
   def new

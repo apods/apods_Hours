@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
   validates_length_of :password, :within => 6..40
   
   
-  #Authenticate a user, return nil if user does not exist or password doesn't match
+  # Authenticate a user, return nil if user does not exist or password doesn't match
   def self.authenticate(submitted_peoplesoft_num, submitted_password)
     user = find_by_peoplesoft_num(submitted_peoplesoft_num)
     return nil if user.nil?
@@ -51,17 +51,25 @@ class User < ActiveRecord::Base
     return nil
   end
   
-  #Check to see if submitted password is correct
+  # Check to see if submitted password is correct
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
   end
   
-  #Private methods for encrypting passwords and creating encrypted passwords
+  # Set a token used to remember a user for a session after a log in
+  def remember_me!
+    self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}")
+    save_without_validation
+  end
+  
+  # Private methods for encryption
   private
     
     def encrypt_password
-      self.password_salt = make_salt
-      self.encrypted_password = encrypt(password)
+      unless password.nil?        # needed because even a save_without_validation will trip this function
+        self.password_salt = make_salt
+        self.encrypted_password = encrypt(password)
+      end
     end
     
     def encrypt(string)
@@ -75,6 +83,4 @@ class User < ActiveRecord::Base
     def secure_hash(string)
       Digest::SHA2.hexdigest(string)
     end
-    
-    
 end

@@ -9,8 +9,16 @@
     
     <%= link_to "Register", new_user_path %>
     <%= link_to "Login", login_path %>
+    <% if @user.nil? %>
+      <% id = 0 %>
+    <% else %>
+      <% id = @user.id %>
+    <% end %>
+    <%= link_to "Show User", :controller => :users, :action => :show, :id => id %><!--#:controller => :users, :action => :show %>-->
     
-    
+    <% flash.each do |key, value| %>
+      <div class="flash-<%= key %>"><%= value %></div>
+    <% end %>
     <div id="yield"><%= yield -%></div>
   </body>
 </html>
