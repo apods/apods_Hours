@@ -3,11 +3,16 @@
 <html>
   <head>
     <title>Enter your APO hours</title>
+    <%= stylesheet_link_tag 'main'%>
   </head>
   <body>
     
     
     <h1> Login Index Page </h1>
+    
+    <%= link_to "Register", :controller => :users, :action => :new %>
+    
+    
     <div id="yield"><%= yield -%></div>
   </body>
 </html>
