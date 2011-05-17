@@ -7,10 +7,8 @@
   </head>
   <body>
     
-    
-    <h1> Login Index Page </h1>
-    
-    <%= link_to "Register", :controller => :users, :action => :new %>
+    <%= link_to "Register", new_user_path %>
+    <%= link_to "Login", login_path %>
     
     
     <div id="yield"><%= yield -%></div>
