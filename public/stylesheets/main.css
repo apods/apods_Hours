@@ -11,7 +11,7 @@
 */.hour-entry {
   position: relative;
   width: 500px;
-  height: 115px;
+  height: 125px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 20px;
@@ -31,6 +31,15 @@
 .hour-entry .hour-area {
   position: relative;
   top: 25px;
+}
+.hour-entry .hour-link-bar {
+  position: relative;
+  top: 30px;
+}
+.hour-entry .hour-link-bar .hour-edit-link { position: absolute; }
+.hour-entry .hour-link-bar .hour-delete-link {
+  position: absolute;
+  left: 80px;
 }
 .form-item { padding: 6px; }
 .fieldWithErrors {

@@ -11,5 +11,9 @@
     <% if !record.description.nil? %>
       <div class="hour-desc">Description: <%= record.description %></div>
     <% end %>
+    <div class="hour-link-bar">
+      <div class="hour-edit-link"><%= link_to 'Edit', edit_hour_path(record.id) %></div>
+      <div class="hour-delete-link"><%= link_to 'Delete', hour_path(record.id), :method => 'destroy', :confirm => "Are you sure?" %></div>
+    </div>
   </div>
 <% end %>
