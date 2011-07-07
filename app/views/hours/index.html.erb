@@ -1,13 +1,15 @@
 <% @hours.each do |record| %>
-  Event: <%= record.event %><br>
-  Hours: <%= record.hours %>
-  <% if !record.date.nil? %>
-    Date: <%= record.date %><br>
-  <% end %>
-  <% if !record.area_of_service.nil? %>
-    Area of Service: <%= record.area_of_service %>
-  <% end %>
-  <% if !record.description.nil? %>
-    Description: <%= record.description %>
-  <% end %><br>
+  <div class="hour-entry">
+    <h3><div class="hour-event">Event: <%= record.event %></div></h3>
+    <div class="hour-time">Hours: <%= record.hours %></div>
+    <% if !record.date.nil? %>
+      <div class="hour-date">Date: <%= record.date %></div>
+    <% end %>
+    <% if !record.area_of_service.nil? %>
+      <div class="hour-area">Area of Service: <%= record.area_of_service %></div>
+    <% end %>
+    <% if !record.description.nil? %>
+      <div class="hour-desc">Description: <%= record.description %></div>
+    <% end %>
+  </div>
 <% end %>

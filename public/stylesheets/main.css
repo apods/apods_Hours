@@ -8,7 +8,31 @@
 
 
 
-*/.form-item { padding: 6px; }
+*/.hour-entry {
+  position: relative;
+  width: 500px;
+  height: 115px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: #38b0de;
+}
+.hour-entry .hour-time {
+  position: absolute;
+  width: 100px;
+}
+.hour-entry .hour-date {
+  position: absolute;
+  right: 0px;
+  width: 250px;
+}
+.hour-entry .hour-area {
+  position: relative;
+  top: 25px;
+}
+.form-item { padding: 6px; }
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
