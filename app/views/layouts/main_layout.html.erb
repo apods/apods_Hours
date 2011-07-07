@@ -7,14 +7,14 @@
   </head>
   <body>
     
-    <%= link_to "Register", new_user_path %>
-    <%= link_to "Login", login_path %>
-    <% if @user.nil? %>
-      <% id = 0 %>
+    <% if current_user.nil? %>
+      <%= link_to "Register", new_user_path %>
+      <%= link_to "Login", login_path %>
     <% else %>
-      <% id = @user.id %>
+      Hi <%= current_user.first_name %>
+      <%= link_to "Log out", logout_path %>
     <% end %>
-    <%= link_to "Show User", :controller => :users, :action => :show, :id => id %><!--#:controller => :users, :action => :show %>-->
+    
     
     <% flash.each do |key, value| %>
       <div class="flash-<%= key %>"><%= value %></div>

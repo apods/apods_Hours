@@ -58,7 +58,7 @@ class User < ActiveRecord::Base
   
   # Set a token used to remember a user for a session after a log in
   def remember_me!
-    self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}")
+    self.remember_token = encrypt("#{password_salt}--#{id}--#{Time.now.utc}")
     save_without_validation
   end
   
