@@ -1,6 +1,6 @@
 class Hour < ActiveRecord::Base
 
-  attr_accessible :hours, :event, :date, :description
+  attr_accessible :hours, :event, :date, :description, :area_of_service
   
   belongs_to :user
   

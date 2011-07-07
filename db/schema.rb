@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110707105944) do
+ActiveRecord::Schema.define(:version => 20110707124151) do
 
   create_table "hours", :force => true do |t|
     t.integer  "hours"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110707105944) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "area_of_service"
   end
 
   add_index "hours", ["user_id"], :name => "index_hours_on_user_id"

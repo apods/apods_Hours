@@ -1,10 +1,13 @@
 <% @hours.each do |record| %>
-  <%= record.event %><br>
-  <%= record.hours %><br>
+  Event: <%= record.event %><br>
+  Hours: <%= record.hours %>
   <% if !record.date.nil? %>
-    <%= record.date %><br>
+    Date: <%= record.date %><br>
+  <% end %>
+  <% if !record.area_of_service.nil? %>
+    Area of Service: <%= record.area_of_service %>
   <% end %>
   <% if !record.description.nil? %>
-    <%= record.description %>
-  <% end %>
+    Description: <%= record.description %>
+  <% end %><br>
 <% end %>

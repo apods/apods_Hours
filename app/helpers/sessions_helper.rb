@@ -27,4 +27,8 @@ module SessionsHelper
     cookies.delete(:remember_token)
     self.current_user = nil
   end
+  
+  def require_login
+    redirect_to login_path unless signed_in?
+  end
 end
