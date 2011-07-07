@@ -1,2 +1,10 @@
-<h2>Hours#index</h2>
-<p>I'm in views/hours</p>
+<% @hours.each do |record| %>
+  <%= record.event %><br>
+  <%= record.hours %><br>
+  <% if !record.date.nil? %>
+    <%= record.date %><br>
+  <% end %>
+  <% if !record.description.nil? %>
+    <%= record.description %>
+  <% end %>
+<% end %>

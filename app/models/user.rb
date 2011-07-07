@@ -23,6 +23,8 @@ class User < ActiveRecord::Base
   attr_accessor :password
   attr_accessible :first_name, :last_name, :peoplesoft_num, :email, :password, :password_confirmation
   
+  has_many :hours, :dependent => :destroy
+  
   EmailRegex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
   validates_presence_of :first_name, :last_name, :email, :peoplesoft_num, :password
