@@ -41,6 +41,10 @@
   position: absolute;
   left: 80px;
 }
+#yield {
+  position: relative;
+  top: 25px;
+}
 .form-item { padding: 6px; }
 .fieldWithErrors {
   padding: 2px;
