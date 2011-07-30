@@ -12,7 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
   map.resources :hours
-  map.resources :users
+  map.resources :users, :only => [:new, :create]
   map.resources :sessions, :only => [:new, :create, :destroy]
   map.login '/login', :controller => :sessions, :action => :new
   map.logout '/logout', :controller => :sessions, :action => :destroy

@@ -1,0 +1,26 @@
+<% form_for @hour do |f| %>
+  <%= f.error_messages %>
+  <div class="form-item">
+    <%= f.label :hours, "Number of Hours" %>
+    <%= f.text_field :hours %>
+  </div>
+  <div class="form-item">
+    <%= f.label :event, "Event Name" %>
+    <%= f.text_field :event %>
+  </div>
+  <div class="form-item">
+    <%= f.label :area_of_service %>
+    <%= f.text_field :area_of_service %>
+  </div>
+  <div class="form-item">
+    <%= f.label :date, "Date of Event" %>
+    <%= f.text_field :date %>
+  </div>
+  <div class="form-item">
+    <%= f.label :description, "Description (optional)" %>
+    <%= f.text_field :description %>
+  </div>
+  <div class="form-submit">
+    <%= f.submit "Done!" %>
+  </div>
+<% end %>
