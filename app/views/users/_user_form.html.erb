@@ -1,0 +1,36 @@
+<% form_for @user do |f| %>
+  <%= f.error_messages %>
+  <div class="form-line">
+    <div class="form-item">
+      <%= f.label :first_name %><br>
+      <%= f.text_field :first_name %>
+    </div>
+    <div class="form-item">
+      <%= f.label :last_name %><br>
+      <%= f.text_field :last_name %>
+    </div>
+  </div>
+  <div class="form-item">
+    <%= f.label :status %>
+    <%= f.select :status, ["Active", "Associate", "Pledge", "Voluntarily Inactive", "Sabbatical"], :blank => true %>
+  </div>
+  <div class="form-item">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="form-item">
+    <%= f.label :peoplesoft_num, "Peoplesoft Number" %><br>
+    <%= f.text_field :peoplesoft_num %>
+  </div>
+  <div class="form-item">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+  <div class="form-item">
+    <%= f.label :password_confirmation, "Confirm Password" %><br>
+    <%= f.password_field :password_confirmation %>  
+  </div><br>
+  <div id="submit-button">
+    <%= f.submit @button_text %>
+  </div>
+<% end %>

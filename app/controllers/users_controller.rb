@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   
   def new
     @user = User.new
+    @button_text = 'Register!'
   end
   
   def create
@@ -25,6 +26,12 @@ class UsersController < ApplicationController
       @user.password_confirmation = ""
       render 'new'
     end
+  end
+  
+  def edit
+    @user = User.find(params[:id])
+    @hours ||= hour_count
+    @button_text = 'Save changes!'
   end
   
   private
