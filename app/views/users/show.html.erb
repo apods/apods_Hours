@@ -1,5 +1,5 @@
-First Name: <%= @user.first_name %>
-Last Name: <%= @user.last_name %>
-Peoplesoft Number: <%= @user.peoplesoft_num %>
-Email: <%= @user.email %>
-Brother Status: <%= @user.status %>
+Name: <%= current_user.first_name %> <%= current_user.last_name %><br>
+Peoplesoft Number: <%= current_user.peoplesoft_num %><br>
+Email: <%= current_user.email %><br>
+Brother Status: <%= current_user.status || 'Unknown' %><br>
+Total Hours: <%= @hours %>
