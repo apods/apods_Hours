@@ -1,23 +1,23 @@
 <% form_for @hour do |f| %>
   <div class="form-item">
-    <%= f.label :hours %>
-    <%= f.text_field :hours %>
-  </div>
-  <div class="form-item">
     <%= f.label :event %>
     <%= f.text_field :event %>
+  </div>
+  <div class="form-item">
+    <%= f.label :hours %>
+    <%= f.text_field :hours %>
   </div>
   <div class="form-item">
     <%= f.label :date %>
     <%= f.text_field :date %>
   </div>
   <div class="form-item">
-    <%= f.label :area_of_service %>
-    <%= f.text_field :area_of_service %>
+    <%= f.label :area_of_service, 'Area of Service' %>
+    <%= f.select :area_of_service, ['Campus', 'Community', 'Fraternity', 'National'] %>
   </div>
   <div class="form-item">
     <%= f.label :description %>
-    <%= f.text_field :description %>
+    <%= f.text_area :description, :rows => 4 %>
   </div>
   <div class="form-submit"><%= f.submit %></div>
 <% end %>
