@@ -3,6 +3,7 @@ class HoursController < ApplicationController
   layout 'main_layout'
   
   before_filter :require_login
+  before_filter :authorized_user, :only => :destroy
   
   def index
     @hours = Hour.find_all_by_user_id(current_user.id)
@@ -30,7 +31,6 @@ class HoursController < ApplicationController
   end
   
   def destroy
-    @hour = Hour.find(params[:id])
     if !@hour.destroy.nil?
       flash[:success] = "Your hour entry has been deleted!"
     else
@@ -40,5 +40,12 @@ class HoursController < ApplicationController
     end
     redirect_to hours_path
   end
-
+  
+  private
+    
+    def authorized_user
+      @hour = Hour.find(params[:id])
+      redirect_to root_path unless current_user == (@hour.user)
+    end
+    
 end
