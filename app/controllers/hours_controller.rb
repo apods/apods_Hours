@@ -30,6 +30,7 @@ class HoursController < ApplicationController
   end
   
   def destroy
+    @hour = Hour.find(params[:id])
     if !@hour.destroy.nil?
       flash[:success] = "Your hour entry has been deleted!"
     else

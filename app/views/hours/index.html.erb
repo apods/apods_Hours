@@ -14,7 +14,7 @@
     <% end %>
     <div class="hour-link-bar">
       <div class="hour-edit-link"><%= link_to 'Edit', edit_hour_path(record.id) %></div>
-      <div class="hour-delete-link"><%= link_to 'Delete', @hour, :action => 'destroy', :method => 'destroy', :confirm => "Are you sure?" %></div>
+      <div class="hour-delete-link"><%= link_to 'Delete', record, :action => 'destroy', :method => 'delete' %></div>
     </div>
   </div>
 <% end %>
