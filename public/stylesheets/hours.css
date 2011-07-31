@@ -9,39 +9,12 @@
 
 
 */.hour-entry {
-  position: relative;
-  width: 500px;
-  height: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  background-color: #38b0de;
+  background-color: purple;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 20px;
 }
-.hour-entry .hour-time {
-  position: absolute;
-  width: 100px;
-}
-.hour-entry .hour-date {
-  position: absolute;
-  right: 0px;
-  width: 250px;
-}
-.hour-entry .hour-area {
-  position: relative;
-  top: 25px;
-}
-.hour-entry .hour-desc {
-  position: relative;
-  top: 40px;
-}
-.hour-entry .hour-link-bar {
-  position: relative;
-  top: 60px;
-}
-.hour-entry .hour-link-bar .hour-edit-link { position: absolute; }
+.hour-entry .hour-link-bar { padding: 5px 0px 5px 0px; }
 .hour-entry .hour-link-bar .hour-delete-link {
-  position: absolute;
-  left: 80px;
+  margin-top: -19px;
+  margin-left: 80px;
 }
