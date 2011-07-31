@@ -9,11 +9,11 @@
     <% if !record.area_of_service.nil? %>
       <div class="hour-area">Area of Service: <%= record.area_of_service %></div>
     <% end %>
-    <% if !record.description.nil? %>
+    <% if !record.description.nil? and !record.description.blank? %>
       <div class="hour-desc">Description: <%= record.description %></div>
     <% end %>
     <div class="hour-link-bar">
-      <div class="hour-edit-link"><%= link_to 'Edit', edit_hour_path(record.id) %></div>
+      <div class="hour-edit-link"><%= link_to 'Edit', edit_hour_path(record) %></div>
       <div class="hour-delete-link"><%= link_to 'Delete', record, :action => 'destroy', :method => 'delete' %></div>
     </div>
   </div>

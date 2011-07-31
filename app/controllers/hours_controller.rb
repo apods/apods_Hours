@@ -31,7 +31,7 @@ class HoursController < ApplicationController
   end
   
   def update
-    if @hour.save
+    if @hour.update_attributes(params[:hour])
       flash[:success] = "Changes saved!"
       redirect_to hours_path
     else
