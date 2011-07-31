@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   before_save :encrypt_password
   
   attr_accessor :password
-  attr_accessible :first_name, :last_name, :peoplesoft_num, :email, :password, :password_confirmation
+  attr_accessible :first_name, :last_name, :peoplesoft_num, :email, :password, :password_confirmation, :status
   
   has_many :hours, :dependent => :destroy
   

@@ -13,6 +13,10 @@
     </div>
   </div>
   <div class="form-item">
+    <%= f.label :status %>
+    <%= f.select :status, ["Active Brother", "Associate", "Voluntarily Inactive", "Sabbatical"], :blank => true %>
+  </div>
+  <div class="form-item">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
@@ -32,4 +36,3 @@
     <%= f.submit "Register" %>
   </div>
 <% end %>
-<!-- <%= f.select :status, ["Active Brother", "Associate", "Voluntarily Inactive", "Sabbatical"])%> ->>
