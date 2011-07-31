@@ -20,7 +20,11 @@
   </div>
   <div class="form-item">
     <%= f.label :peoplesoft_num, "Peoplesoft Number" %><br>
-    <%= f.text_field :peoplesoft_num %>
+    <% if params[:action] == :new %>
+      <%= f.text_field :peoplesoft_num %>
+    <% else %>
+      <%= f.text_field :peoplesoft_num, :readonly => true %>
+    <% end %>
   </div>
   <div class="form-item">
     <%= f.label :password %><br>

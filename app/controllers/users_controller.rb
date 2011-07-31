@@ -2,6 +2,9 @@ class UsersController < ApplicationController
   
   layout 'main_layout'
   
+  before_filter :require_login, :only => [:update, :show]
+  before_filter :authorized_user, :only => :update
+  
   def index
   end
   
@@ -29,9 +32,25 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = User.find(params[:id])
+    @user ||= current_user
     @hours ||= hour_count
     @button_text = 'Save changes!'
+  end
+  
+  def update
+    if @user.update_attributes(params[:user])
+      flash[:success] = "Changes saved!"
+      redirect_to root_path
+    else
+      flash[:error] = "Error, your changes were not saved, please try again. " + 
+                      "If you receive this message again, contact Gino Sanzi " + 
+                      "at eugene.sanzi@gmail.com"
+  #    @user.first_name = params[:user][:first_name]
+   #   @user.last_name = params[:user][:last_name]
+   #   @user.status = params[:user][:status]
+   #   @user.email = params[:user][:email]
+      redirect_to edit_user_path
+    end
   end
   
   private
@@ -43,6 +62,13 @@ class UsersController < ApplicationController
         count += hour.hours
       end
       count
+    end
+    
+    private
+    
+    def authorized_user
+      @user = User.find(params[:id])
+      redirect_to root_path unless current_user == (@user)
     end
     
 end
