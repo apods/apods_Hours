@@ -32,7 +32,6 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = User.find(params[:id])
     @hours = hour_count
     @button_text = 'Save changes!'
   end

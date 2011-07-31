@@ -6,7 +6,8 @@ class HoursController < ApplicationController
   before_filter :authorized_user, :only => [:update, :destroy]
   
   def index
-    @hours = Hour.find_all_by_user_id(current_user.id)
+    #@hours = Hour.find_all_by_user_id(current_user.id)
+    @hours = current_user.hours.paginate(:page => params[:page])
   end
   
   def new
