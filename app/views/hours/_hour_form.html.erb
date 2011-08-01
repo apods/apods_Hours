@@ -1,26 +1,26 @@
 <% form_for @hour do |f| %>
   <%= error_messages_for 'hour' %>
   <div class="form-item">
-    <div id="event-label"><%= f.label :event, "Event Name" %></div>
-    <div id="event-field"><%= f.text_field :event %></div>
+    <%= f.label :event, "Event Name", :class => "label" %>
+    <%= f.text_field :event, :class => "field" %>
   </div>
   <div class="form-item">
-    <div id="hours-label"><%= f.label :hours, "Number of Hours" %></div>
-    <div id="hours-field"><%= f.text_field :hours %></div>
+    <%= f.label :hours, "Number of Hours", :class => "label" %>
+    <%= f.text_field :hours, :class => "field" %>
   </div>
   <div class="form-item">
-    <div id="date-label"><%= f.label :date, "Date of Event" %></div>
-    <div id="date-field"><%= f.text_field :date %></div>
+    <%= f.label :date, "Date of Event", :class => "label" %>
+    <%= f.text_field :date, :class => "field" %>
   </div>
   <div class="form-item">
-    <div id="area-label"><%= f.label :area_of_service, 'Area of Service' %></div>
-    <div id="area-field"><%= f.select :area_of_service, ['Campus', 'Community', 'Fraternity', 'National'] %></div>
+    <%= f.label :area_of_service, "Area of Service", :class => "label" %>
+    <%= f.select :area_of_service, ['Campus', 'Community', 'Fraternity', 'National'], :class => "field" %>
   </div>
   <div class="form-item">
-    <div id="desc-label"><%= f.label :description, "Description (optional)" %></div>
-    <div id="desc-field"><%= f.text_area :description, :rows => 4 %></div>
+    <%= f.label :description, "Description (optional)", :class => "label" %>
+    <%= f.text_area :description, :rows => 4, :class => "field" %>
   </div>
-  <div class="form-submit">
+  <div class="submit-button">
     <%= f.submit "Done!" %>
   </div>
 <% end %>
