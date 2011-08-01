@@ -2,19 +2,21 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title>Enter your APO hours</title>
-    <%= stylesheet_link_tag 'main'%>
+    <title>APO Hour Site</title>
+    <%= stylesheet_link_tag 'Normal/main'%>
+    <!--[if lt IE 8]><%= stylesheet_link_tag 'IE/main' %><![endif]-->
   </head>
   <body>
-    <div class="navbar">
+    <ul class="navbar">
     <% if current_user.nil? %>
-      <%= link_to "Register", new_user_path %>
-      <%= link_to "Login", login_path %>
+      <li><%= link_to "Register", new_user_path %></li>
+      <li><%= link_to "Login", login_path %></li>
     <% else %>
-      Hi <%= link_to current_user.first_name, edit_user_path(current_user)  %>
-      <%= link_to "Log out", logout_path %>
+      <li>Hi <%= current_user.first_name %></li>
+      <li><%= link_to "Profile", edit_user_path(current_user) %>
+      <li><%= link_to "Log out", logout_path %></li>
     <% end %>
-    </div>
+    </ul>
     
     <% flash.each do |key, value| %>
       <div class="flash-<%= key %>"><%= value %></div>

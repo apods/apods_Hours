@@ -1,12 +1,14 @@
+<h1>Log in</h1>
+
 <% form_for :session, :url => sessions_path do |f| %>
   <div class="form-item">
-    <%= f.label :peoplesoft_num, "Peoplesoft Number" %><br>
-    <%= f.text_field :peoplesoft_num %>
+    <%= f.label :peoplesoft_num, "Peoplesoft Number", :class => "label" %>
+    <%= f.text_field :peoplesoft_num, :class => "field" %>
   </div>
   <div class="form-item">
-    <%= f.label :password %><br>
-    <%= f.password_field :password %>
-  </div><br>
+    <%= f.label :password, "Password", :class => "label" %>
+    <%= f.password_field :password, :class => "field" %>
+  </div>
   <div id="submit-button">
     <%= f.submit 'Log In'%>
   </div>
