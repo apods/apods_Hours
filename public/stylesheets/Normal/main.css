@@ -47,11 +47,20 @@ ul.navbar { margin: 0; }
   margin-bottom: 5px;
 }
 .hour-entry .hour-desc { margin-top: 5px; }
-.hour-entry .hour-link-bar { padding: 25px 0px 15px 0px; }
-.hour-entry .hour-link-bar .hour-delete-link {
-  margin-top: -19px;
-  margin-left: 80px;
+.hour-entry .hour-link-bar {
+  display: block;
+  padding: 25px 0px 15px 0px;
 }
+.hour-entry .hour-link-bar .hour-edit-link {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+}
+.hour-entry .hour-link-bar .hour-edit-link a { font-size: 18px; }
+.hour-entry .hour-link-bar .hour-delete-link {
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+}
+.hour-entry .hour-link-bar .hour-delete-link a { font-size: 18px; }
 body {
   margin-left: 10%;
   margin-right: 10%;
