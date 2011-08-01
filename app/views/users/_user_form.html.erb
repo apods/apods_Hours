@@ -1,38 +1,37 @@
 <% form_for @user do |f| %>
   <%= f.error_messages %>
-  <div class="form-line">
-    <div class="form-item">
-      <div id="first-name-label"><%= f.label :first_name %></div>
-      <div id="first-name-field"><%= f.text_field :first_name %></div>
-    </div>
-    <div class="form-item">
-      <div id="last-name-label"><%= f.label :last_name %></div>
-      <div id="last-name-field"><%= f.text_field :last_name %></div>
-    </div>
+  
+  <div class="form-item">
+    <%= f.label :first_name, "First Name", :class => "label" %>
+    <%= f.text_field :first_name, :class => "field" %>
   </div>
   <div class="form-item">
-    <div id="status-label"><%= f.label :status %></div>
-    <div id="status-field"><%= f.select :status, ["Active", "Associate", "Pledge", "Voluntarily Inactive", "Sabbatical"], :blank => true %></div>
+    <%= f.label :last_name, "Last Name", :class => "label" %>
+    <%= f.text_field :last_name, :class => "field" %>
   </div>
   <div class="form-item">
-    <div id="email-label"><%= f.label :email %></div>
-    <div id="email-field"><%= f.text_field :email %></div>
+    <%= f.label :status, "Status", :class => "label" %>
+    <%= f.select :status, ["Active", "Associate", "Pledge", "Voluntarily Inactive", "Sabbatical"], :blank => true, :class => "field" %>
+  </div>
+  <div class="form-item">
+    <%= f.label :email, "Email", :class => "label" %>
+    <%= f.text_field :email, :class => "field" %>
   </div>  
   <div class="form-item">
-    <div id="peoplesoft-label"><%= f.label :peoplesoft_num, "Peoplesoft Number" %></div>
+    <%= f.label :peoplesoft_num, "Peoplesoft Number", :class => "label" %>
     <% if params[:action] == 'new' %>
-      <div id="peoplesoft-field"><%= f.text_field :peoplesoft_num %></div>
+      <%= f.text_field :peoplesoft_num, :class => "field" %>
     <% else %>
-      <div id="peoplesoft-field"><%= f.text_field :peoplesoft_num, :readonly => true %></div>
+      <%= f.text_field :peoplesoft_num, :readonly => true, :class => "field" %>
     <% end %>
   </div>
   <div class="form-item">
-    <div id="pw-label"><%= f.label :password %></div>
-    <div id="pw-field"><%= f.password_field :password %></div>
+    <%= f.label :password, "Password", :class => "label" %>
+    <%= f.password_field :password, :class => "field" %>
   </div>
   <div class="form-item">
-    <div id="conf-pw-label"><%= f.label :password_confirmation, "Confirm Password" %></div>
-    <div id="conf-pw-field"><%= f.password_field :password_confirmation %></div>  
+    <%= f.label :password_confirmation, "Confirm Password", :class => "label" %>
+    <%= f.password_field :password_confirmation, :class => "field" %>
   </div>
   <div class="submit-button">
     <%= f.submit @button_text %>
