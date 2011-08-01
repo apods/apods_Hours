@@ -57,7 +57,10 @@ body {
   margin-right: 10%;
   background-color: #c0d9af;
 }
-body a { text-decoration: none; }
+body a {
+  text-decoration: none;
+  font-size: 22px;
+}
 #yield {
   position: relative;
   top: 25px;
