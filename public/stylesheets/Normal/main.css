@@ -30,12 +30,21 @@
 .navbar li a { font-size: 22px; }
 ul.navbar { margin: 0; }
 #enter-hours-link { margin-bottom: 15px; }
-#hour-entry-list { margin-top: 30px; }
+#hour-entry-list {
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 200px;
+}
 .hour-entry {
   width: 600px;
   margin: 5px 0px 0px 5px;
   padding: 5px 5px 5px 20px;
-  background-color: #38b0de;
+  background-color: #79a888;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 8px;
+  border-color: black;
 }
 .hour-entry .hour-time { margin-bottom: 10px; }
 .hour-entry .hour-date {
@@ -73,6 +82,8 @@ body a {
 #yield {
   position: relative;
   top: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .form-item { padding: 6px; }
 .label {
