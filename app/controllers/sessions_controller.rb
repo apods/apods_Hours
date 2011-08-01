@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
   end
   
   def create
+    reset_session
     @user = User.authenticate(params[:session][:peoplesoft_num], params[:session][:password])
     if @user.nil?   # authentication was unsuccessful, there is no matching record in the database for this user
       flash[:error] = "Make sure you entered your peoplesoft number and password correctly. If you have not registered this semester, please do so."
