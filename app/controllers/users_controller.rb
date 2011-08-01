@@ -42,14 +42,7 @@ class UsersController < ApplicationController
       flash[:success] = "Changes saved!"
       redirect_to root_path
     else
-      flash[:error] = "Error, your changes were not saved, please try again. " + 
-                      "If you receive this message again, contact Gino Sanzi " + 
-                      "at eugene.sanzi@gmail.com"
-      @user.first_name = params[:user][:first_name]
-      @user.last_name = params[:user][:last_name]
-      @user.status = params[:user][:status]
-      @user.email = params[:user][:email]
-      redirect_to edit_user_path(@user)
+      render :action => :edit
     end
   end
   

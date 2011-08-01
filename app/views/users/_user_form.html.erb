@@ -2,38 +2,38 @@
   <%= f.error_messages %>
   <div class="form-line">
     <div class="form-item">
-      <%= f.label :first_name %><br>
-      <%= f.text_field :first_name %>
+      <div id="first-name-label"><%= f.label :first_name %></div>
+      <div id="first-name-field"><%= f.text_field :first_name %></div>
     </div>
     <div class="form-item">
-      <%= f.label :last_name %><br>
-      <%= f.text_field :last_name %>
+      <div id="last-name-label"><%= f.label :last_name %></div>
+      <div id="last-name-field"><%= f.text_field :last_name %></div>
     </div>
   </div>
   <div class="form-item">
-    <%= f.label :status %>
-    <%= f.select :status, ["Active", "Associate", "Pledge", "Voluntarily Inactive", "Sabbatical"], :blank => true %>
+    <div id="status-label"><%= f.label :status %></div>
+    <div id="status-field"><%= f.select :status, ["Active", "Associate", "Pledge", "Voluntarily Inactive", "Sabbatical"], :blank => true %></div>
   </div>
   <div class="form-item">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <div id="email-label"><%= f.label :email %></div>
+    <div id="email-field"><%= f.text_field :email %></div>
   </div>  
   <div class="form-item">
-    <%= f.label :peoplesoft_num, "Peoplesoft Number" %><br>
+    <div id="peoplesoft-label"><%= f.label :peoplesoft_num, "Peoplesoft Number" %></div>
     <% if params[:action] == 'new' %>
-      <%= f.text_field :peoplesoft_num %>
+      <div id="peoplesoft-field"><%= f.text_field :peoplesoft_num %></div>
     <% else %>
-      <%= f.text_field :peoplesoft_num, :readonly => true %>
+      <div id="peoplesoft-field"><%= f.text_field :peoplesoft_num, :readonly => true %></div>
     <% end %>
   </div>
   <div class="form-item">
-    <%= f.label :password %><br>
-    <%= f.password_field :password %>
+    <div id="pw-label"><%= f.label :password %></div>
+    <div id="pw-field"><%= f.password_field :password %></div>
   </div>
   <div class="form-item">
-    <%= f.label :password_confirmation, "Confirm Password" %><br>
-    <%= f.password_field :password_confirmation %>  
-  </div><br>
+    <div id="conf-pw-label"><%= f.label :password_confirmation, "Confirm Password" %></div>
+    <div id="conf-pw-field"><%= f.password_field :password_confirmation %></div>  
+  </div>
   <div id="submit-button">
     <%= f.submit @button_text %>
   </div>

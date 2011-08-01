@@ -1,24 +1,24 @@
 <% form_for @hour do |f| %>
-  <%= f.error_messages %>
+  <%= error_messages_for 'hour' %>
   <div class="form-item">
-    <%= f.label :event, "Event Name" %>
-    <%= f.text_field :event %>
+    <div id="event-label"><%= f.label :event, "Event Name" %></div>
+    <div id="event-field"><%= f.text_field :event %></div>
   </div>
   <div class="form-item">
-    <%= f.label :hours, "Number of Hours" %>
-    <%= f.text_field :hours %>
+    <div id="hours-label"><%= f.label :hours, "Number of Hours" %></div>
+    <div id="hours-field"><%= f.text_field :hours %></div>
   </div>
   <div class="form-item">
-    <%= f.label :date, "Date of Event" %>
-    <%= f.text_field :date %>
+    <div id="date-label"><%= f.label :date, "Date of Event" %></div>
+    <div id="date-field"><%= f.text_field :date %></div>
   </div>
   <div class="form-item">
-    <%= f.label :area_of_service, 'Area of Service' %>
-    <%= f.select :area_of_service, ['Campus', 'Community', 'Fraternity', 'National'] %>
+    <div id="area-label"><%= f.label :area_of_service, 'Area of Service' %></div>
+    <div id="area-field"><%= f.select :area_of_service, ['Campus', 'Community', 'Fraternity', 'National'] %></div>
   </div>
   <div class="form-item">
-    <%= f.label :description, "Description (optional)" %>
-    <%= f.text_area :description, :rows => 4 %>
+    <div id="desc-label"><%= f.label :description, "Description (optional)" %></div>
+    <div id="desc-field"><%= f.text_area :description, :rows => 4 %></div>
   </div>
   <div class="form-submit">
     <%= f.submit "Done!" %>

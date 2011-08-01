@@ -19,10 +19,7 @@ class HoursController < ApplicationController
       flash[:success] = "Your hour entry has been saved!"
       redirect_to hours_path
     else
-      flash[:error] = "Error, your entry was not saved, please try again. " + 
-                      "If you receive this message again, contact Gino Sanzi " + 
-                      "at eugene.sanzi@gmail.com"
-      redirect_to new_hour_path
+      render :action => :new
     end
   end
   
@@ -35,10 +32,7 @@ class HoursController < ApplicationController
       flash[:success] = "Changes saved!"
       redirect_to hours_path
     else
-      flash[:error] = "Error, your changes were not saved, please try again. " + 
-                      "If you receive this message again, contact Gino Sanzi " + 
-                      "at eugene.sanzi@gmail.com"
-      redirect_to edit_hour_path
+      render :action => :edit
     end
   end
   

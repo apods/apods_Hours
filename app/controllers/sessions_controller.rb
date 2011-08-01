@@ -9,15 +9,12 @@ class SessionsController < ApplicationController
   def create
     @user = User.authenticate(params[:session][:peoplesoft_num], params[:session][:password])
     if @user.nil?   # authentication was unsuccessful, there is no matching record in the database for this user
-      flash[:error] = "Invalid input, make sure you entered your\npeoplesoft number and password correctly.\nIf you have not registered this semester, please do so."
-      redirect_to login_path
+      flash[:error] = "Make sure you entered your peoplesoft number and password correctly. If you have not registered this semester, please do so."
+      render :action => :new
     else    
       # user was authenticated, proceed to sign them in
       sign_in @user
-      # for the benefit of new people using this, flash.now is used
-      # here because there is an implicit render at the end of every
-      # function, regular flash is used before a redirect.
-      flash.now[:success] = "Login successful!"
+      flash[:success] = "Login successful!"
       redirect_to hours_path
     end
   end
