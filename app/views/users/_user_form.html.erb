@@ -17,10 +17,10 @@
   <div class="form-item">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
-  </div>
+  </div>  
   <div class="form-item">
     <%= f.label :peoplesoft_num, "Peoplesoft Number" %><br>
-    <% if params[:action] == :new %>
+    <% if params[:action] == 'new' %>
       <%= f.text_field :peoplesoft_num %>
     <% else %>
       <%= f.text_field :peoplesoft_num, :readonly => true %>

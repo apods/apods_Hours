@@ -1,4 +1,5 @@
 <% form_for :session, :url => sessions_path do |f| %>
+  <%= f.error_messages %>
   <div class="form-item">
     <%= f.label :peoplesoft_num, "Peoplesoft Number" %><br>
     <%= f.text_field :peoplesoft_num %>

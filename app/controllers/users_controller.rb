@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if !signed_in?
       redirect_to login_path
     end
-    @hours ||= hour_count
+    @hours = hour_count
   end
   
   def new
@@ -23,6 +23,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
+      sign_in(@user)
       redirect_to hours_path
     else
       @user.password = ""
