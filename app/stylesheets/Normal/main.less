@@ -1,6 +1,15 @@
+.round-corners (@radius: 15px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
 @import '../_fonts';
 @import '_layout';
 @import '_hours';
+
+
 
 h1 {
   
@@ -37,7 +46,19 @@ body {
 
 .field {
   display: block;
+  text-align: center;
   margin-top: 4px;
+  background-color: #54839e;
+  border-style: none;
+  .round-corners(50px);
+}
+
+#login-pn {
+  width: 150px;
+}
+
+#login-pw {
+  width: 150px;
 }
 
 .submit-button {

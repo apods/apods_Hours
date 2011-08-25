@@ -92,6 +92,13 @@ body a {
 }
 .field {
   display: block;
+  text-align: center;
   margin-top: 4px;
+  background-color: #54839e;
+  border-style: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
 }
+#login-pn, #login-pw { width: 150px; }
 .submit-button { margin: 15px 0px 0px 6px; }
