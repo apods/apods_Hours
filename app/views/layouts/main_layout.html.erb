@@ -6,7 +6,7 @@
     <%= stylesheet_link_tag 'Normal/main'%>
     <!--[if lt IE 8]><%= stylesheet_link_tag 'IE/main' %><![endif]-->
   </head>
-  <body><div class="bgd">
+  <body>
     <ul class="navbar">
     <% if current_user.nil? %>
       <li><%= link_to "Register", new_user_path %></li>
@@ -23,5 +23,5 @@
       <div class="flash-<%= key %>"><%= value %></div>
     <% end %>
     <div id="yield"><%= yield -%></div>
-  </div></body>
+  </body>
 </html>

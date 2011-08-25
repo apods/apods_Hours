@@ -9,8 +9,8 @@
     <%= f.label :password, "Password", :class => "label" %>
     <%= f.password_field :password, :class => "field", :id => "login-pw" %>
   </div>
-  <div id="test"><%= f.text_field :peoplesoft_num, :class => "field", :id => "supa" %></div>
   <div class="submit-button">
-    <%= f.submit 'Log In'%>
+    <!-- <%= f.submit 'Log In', :type => :image, :src => '../../../public/images/login_img.png' %> -->
+    <%= image_submit_tag "login_img.png" %>
   </div>
 <% end %>

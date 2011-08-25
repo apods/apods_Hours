@@ -70,16 +70,6 @@ ul.navbar { margin: 0; }
   margin: 0px 0px 0px 10px;
 }
 .hour-entry .hour-link-bar .hour-delete-link a { font-size: 18px; }
-body { background: url('../../images/site_mockup.png'); }
-#test {
-  position: fixed;
-  top: 200px;
-  left: 494px;
-}
-#supa {
-  height: 38px;
-  width: 168px;
-}
 body {
   margin-left: 10%;
   margin-right: 10%;
@@ -111,5 +101,8 @@ body a {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
 }
-#login-pn, #login-pw { width: 130px; }
+#login-pn, #login-pw {
+  width: 168px;
+  height: 38px;
+}
 .submit-button { margin: 15px 0px 0px 6px; }
