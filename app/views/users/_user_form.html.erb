@@ -11,7 +11,7 @@
   </div>
   <div class="form-item">
     <%= f.label :status, "Status", :class => "label" %>
-    <%= f.select :status, ["Active", "Associate", "Pledge", "Voluntarily Inactive", "Sabbatical"], :blank => true, :class => "field" %>
+    <%= f.select :status, ["Active", "Associate", "Pledge", "Brother in class", "Voluntarily Inactive", "Sabbatical"], :blank => true, :class => "field" %>
   </div>
   <div class="form-item">
     <%= f.label :email, "Email", :class => "label" %>
@@ -19,7 +19,7 @@
   </div>  
   <div class="form-item">
     <%= f.label :peoplesoft_num, "Peoplesoft Number", :class => "label" %>
-    <% if params[:action] == 'new' %>
+    <% if params[:action] == 'new' || 'create' %>
       <%= f.text_field :peoplesoft_num, :class => "field" %>
     <% else %>
       <%= f.text_field :peoplesoft_num, :readonly => true, :class => "field" %>

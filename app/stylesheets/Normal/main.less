@@ -1,20 +1,18 @@
 @import '../_functions';
-@import '../_fonts';
+@import '../_colors';
 @import '_layout';
 @import '_hours';
-@import '_login';
-@import 'DELETE';
 
 
 h1 {
-  
+  font-size: 25px;
 }
 
 body {
   /* text-align: center; */
   margin-left: 10%;
   margin-right: 10%;
-  background-color: #C0D9AF;
+  background-color: @body-color;
   
   a {
     text-decoration: none;
@@ -22,12 +20,36 @@ body {
   }
 }
 
+.flash-success {
+  background-color: @object-background;
+  .round-corners;
+  margin: 25px auto 0;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  width: 600px;
+}
+
+.flash-error {
+  background-color: @object-background;
+  .round-corners;
+  margin: 25px auto 0;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  width: 600px;
+}
 
 #yield {
-  position: relative;
-  top: 25px;
   margin-left: 10%;
-  margin-right: 10%
+  margin-right: 10%;
+  margin: 30px 10% 10%;
+}
+
+.form {
+  display: inline-block;
+  padding: 10px 10px 20px 15px;
+  margin: 0 35% 0;
+  background-color: @object-background;
+  .round-corners;
 }
 
 .form-item {
@@ -41,12 +63,9 @@ body {
 
 .field {
   display: block;
-  text-align: center;
-  padding: 0px 10px 0px 10px;
+  width: 200px;
   margin-top: 4px;
-  background-color: #54839e;
-  border-style: none;
-  .round-corners(50px);
+  margin: 10% 10% 10% 1
 }
 
 .submit-button {
@@ -54,7 +73,8 @@ body {
 }
 
 .fieldWithErrors {
-  
+  background-color: @body-color;
+  padding: 7px 20px;
 }
 
 .fieldWithErrors label {
@@ -62,15 +82,19 @@ body {
 }
 
 #errorExplanation {
-  
+  font-size: 15px;
+  margin: 0 2% 12px;
+  border: 2px solid black;
+
 }
 
 #errorExplanation h2 {
-  
+  text-align: center;
+  font-size: 20px;
 }
 
 #errorExplanation p {
-  
+  text-align: center;
 }
 
 #errorExplanation ul li {

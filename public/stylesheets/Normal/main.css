@@ -8,21 +8,13 @@
 
 
 
-*/@font-face {
-  font-family: league_gothic;
-  src: url('../../fonts/league_gothic.otf');
-}
-.navbar {
+*/.navbar {
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   z-index: 10;
   padding: 5px 5px 5px 5px;
-<<<<<<< HEAD
-  background-color: #ffddaa;
-=======
-  background-color: #ffdaaa;
->>>>>>> styling
+  background-color: #ffff44;
   text-align: center;
   display: inline-block;
   font-size: 22px;
@@ -34,24 +26,38 @@
   margin-right: 10px;
   font-weight: bold;
 }
-.navbar li a { font-size: 22px; }
+.navbar li a {
+  font-size: 22px;
+  color: #5555ff;
+}
 ul.navbar { margin: 0; }
-#enter-hours-link { margin-bottom: 15px; }
+#enter-hours-link {
+  margin-left: 5%;
+  margin-bottom: 15px;
+  background-color: #ffff44;
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
 #hour-entry-list {
-  margin-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 200px;
 }
 .hour-entry {
   width: 600px;
-  margin: 5px 0px 0px 5px;
+  margin: 15px 0px 0px 15px;
   padding: 5px 5px 5px 20px;
-  background-color: #79a888;
+  background-color: #ffff44;
   margin-left: 5%;
   margin-right: 5%;
   border: 8px;
   border-color: black;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 .hour-entry .hour-time { margin-bottom: 10px; }
 .hour-entry .hour-date {
@@ -77,24 +83,39 @@ ul.navbar { margin: 0; }
   margin: 0px 0px 0px 10px;
 }
 .hour-entry .hour-link-bar .hour-delete-link a { font-size: 18px; }
-#login-pn, #login-pw {
-  width: 168px;
-  height: 38px;
-}
+h1 { font-size: 25px; }
 body {
   margin-left: 10%;
   margin-right: 10%;
-  background-color: #c0d9af;
+  background-color: #66ccff;
 }
 body a {
   text-decoration: none;
   font-size: 22px;
 }
+.flash-success, .flash-error {
+  background-color: #ffff44;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  margin: 25px auto 0;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  width: 600px;
+}
 #yield {
-  position: relative;
-  top: 25px;
   margin-left: 10%;
   margin-right: 10%;
+  margin: 30px 10% 10%;
+}
+.form {
+  display: inline-block;
+  padding: 10px 10px 20px 15px;
+  margin: 0 35% 0;
+  background-color: #ffff44;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 .form-item { padding: 6px; }
 .label {
@@ -103,13 +124,22 @@ body a {
 }
 .field {
   display: block;
-  text-align: center;
-  padding: 0px 10px 0px 10px;
+  width: 200px;
   margin-top: 4px;
-  background-color: #54839e;
-  border-style: none;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
+  margin: 10% 10% 10% 1;
 }
 .submit-button { margin: 15px 0px 0px 6px; }
+.fieldWithErrors {
+  background-color: #66ccff;
+  padding: 7px 20px;
+}
+#errorExplanation {
+  font-size: 15px;
+  margin: 0 2% 12px;
+  border: 2px solid black;
+}
+#errorExplanation h2 {
+  text-align: center;
+  font-size: 20px;
+}
+#errorExplanation p { text-align: center; }

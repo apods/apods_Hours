@@ -28,6 +28,7 @@ class UsersController < ApplicationController
     else
       @user.password = ""
       @user.password_confirmation = ""
+      @button_text = 'Register!'
       render 'new'
     end
   end

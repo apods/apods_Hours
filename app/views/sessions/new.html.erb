@@ -1,17 +1,19 @@
-<h1>Log in</h1>
+<div class="form">
+  <div id="login">
+    <h1>Log in</h1>
 
-<% form_for :session, :url => sessions_path do |f| %>
-  <div class="form-item">
-    <%= f.label :peoplesoft_num, "Peoplesoft Number", :class => "label" %>
-    <%= f.text_field :peoplesoft_num, :class => "field", :id => "login-pn" %>
+    <% form_for :session, :url => sessions_path do |f| %>
+      <div class="form-item">
+        <%= f.label :peoplesoft_num, "Peoplesoft Number", :class => "label" %>
+        <%= f.text_field :peoplesoft_num, :class => "field", :id => "login-pn" %>
+      </div>
+      <div class="form-item">
+        <%= f.label :password, "Password", :class => "label" %>
+        <%= f.password_field :password, :class => "field", :id => "login-pw" %>
+      </div>
+      <div class="submit-button">
+        <%= f.submit 'Log In' %>
+      </div>
+    <% end %>
   </div>
-  <div class="form-item">
-    <%= f.label :password, "Password", :class => "label" %>
-    <%= f.password_field :password, :class => "field", :id => "login-pw" %>
-  </div>
-  <div class="submit-button">
-    <!-- <%= f.submit 'Log In', :type => :image, :src => '../../../public/images/login_img.png' %> -->
-    <%= image_submit_tag "login_img.png" %>
-  </div>
-  <%= link_to image_tag('register_img.png'), new_user_path, :id => "register-link" %>
-<% end %>
+</div>
