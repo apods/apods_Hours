@@ -43,6 +43,7 @@ class UsersController < ApplicationController
       flash[:success] = "Changes saved!"
       redirect_to root_path
     else
+      @button_text = 'Save changes!'
       render :action => :edit
     end
   end
