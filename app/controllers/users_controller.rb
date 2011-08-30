@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
   
-  layout 'main_layout'
-  
   before_filter :require_login, :only => [:edit, :update, :show]
   before_filter :authorized_user, :only => [:edit, :update]
   

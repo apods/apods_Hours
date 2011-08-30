@@ -1,7 +1,5 @@
 class HoursController < ApplicationController
   
-  layout 'main_layout'
-  
   before_filter :require_login
   before_filter :authorized_user, :only => [:update, :destroy]
   
