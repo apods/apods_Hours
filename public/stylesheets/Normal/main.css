@@ -45,7 +45,7 @@ ul.navbar { margin: 0 6%; }
   margin-top: 30px;
 }
 #enter-hours-link {
-  margin: 0 0 15px 15%;
+  margin: 0 0 15px 5%;
   background-color: #ffff44;
   padding: 10px;
   display: inline-block;
@@ -113,7 +113,7 @@ body a {
 }
 .field {
   display: block;
-  width: 200px;
+  width: 90%;
   margin-top: 4px;
 }
 .submit-button { margin: 15px 0px 0px 6px; }
