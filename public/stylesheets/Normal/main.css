@@ -45,7 +45,7 @@ ul.navbar { margin: 0 6%; }
   margin-top: 30px;
 }
 #enter-hours-link {
-  margin-left: 5%;
+  margin: 0 0 3% 5%;
   background-color: #ffff44;
   padding: 10px;
   display: inline-block;
@@ -54,7 +54,7 @@ ul.navbar { margin: 0 6%; }
   -moz-border-radius: 10px;
 }
 .pagination {
-  margin: 6% 0 3%;
+  margin: 3% 0;
   font-size: 22px;
 }
 .pagination a { font-size: 22px; }
