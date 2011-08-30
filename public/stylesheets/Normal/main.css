@@ -53,7 +53,7 @@ ul.navbar { margin: 0 6%; }
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
-#hour-entry-list { margin: 0 20% 200px; }
+#hour-entry-list { margin: 0 5% 200px; }
 .hour-entry {
   margin: 3% 5%;
   padding: 0.5% 23px 0.5% 27px;

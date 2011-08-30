@@ -53,7 +53,7 @@ ul.navbar { margin: 0 6%; }
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
-#hour-entry-list { margin: 0 20% 200px; }
+#hour-entry-list { margin: 0 1% 200px; }
 .hour-entry {
   margin: 3% 5%;
   padding: 0.5% 23px 0.5% 27px;
@@ -88,7 +88,6 @@ ul.navbar { margin: 0 6%; }
   margin: 0px 0px 0px 10px;
 }
 #login { margin-left: 7%; }
-#login-pn, #login-pw { width: 90%; }
 h1 { font-size: 30px; }
 body {
   background-color: #66ccff;
