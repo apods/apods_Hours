@@ -22,37 +22,32 @@
 .navbar li {
   list-style-type: none;
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
   font-weight: bold;
 }
 .navbar li a {
   font-size: 22px;
   color: #5555ff;
 }
-ul.navbar { margin: 0; }
+ul.navbar { margin: 0 6%; }
+#yield {
+  display: block;
+  margin-top: 30px;
+}
 #enter-hours-link {
-  margin-left: 5%;
-  margin-bottom: 15px;
+  margin: 0 0 15px 15%;
   background-color: #ffff44;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   display: inline-block;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
-#hour-entry-list {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 200px;
-}
+#hour-entry-list { margin: 0 20% 200px; }
 .hour-entry {
-  width: 600px;
-  margin: 15px 0px 0px 15px;
-  padding: 5px 5px 5px 20px;
+  margin: 17px 15%;
+  padding: 5px 20px 5px 20px;
   background-color: #ffff44;
-  margin-left: 5%;
-  margin-right: 5%;
   border: 8px;
   border-color: black;
   border-radius: 15px;
@@ -84,11 +79,7 @@ ul.navbar { margin: 0; }
 }
 .hour-entry .hour-link-bar .hour-delete-link a { font-size: 18px; }
 h1 { font-size: 25px; }
-body {
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: #66ccff;
-}
+body { background-color: #66ccff; }
 body a {
   text-decoration: none;
   font-size: 22px;
@@ -103,15 +94,10 @@ body a {
   text-align: center;
   width: 600px;
 }
-#yield {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin: 30px 10% 10%;
-}
 .form {
   display: inline-block;
   padding: 10px 10px 20px 15px;
-  margin: 0 35% 0;
+  margin: 0 0;
   background-color: #ffff44;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -126,7 +112,6 @@ body a {
   display: block;
   width: 200px;
   margin-top: 4px;
-  margin: 10% 10% 10% 1;
 }
 .submit-button { margin: 15px 0px 0px 6px; }
 .fieldWithErrors {
