@@ -30,6 +30,16 @@
   color: #5555ff;
 }
 ul.navbar { margin: 0 6%; }
+.flash-success, .flash-error {
+  background-color: #ffff44;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  margin: 25px auto 0;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  width: 600px;
+}
 #yield {
   display: block;
   margin-top: 30px;
@@ -78,26 +88,17 @@ ul.navbar { margin: 0 6%; }
   margin: 0px 0px 0px 10px;
 }
 .hour-entry .hour-link-bar .hour-delete-link a { font-size: 18px; }
+#login { margin-left: 7%; }
+#login-pn { width: 200px; }
 h1 { font-size: 25px; }
 body { background-color: #66ccff; }
 body a {
   text-decoration: none;
   font-size: 22px;
 }
-.flash-success, .flash-error {
-  background-color: #ffff44;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  margin: 25px auto 0;
-  padding: 20px 20px 20px 20px;
-  text-align: center;
-  width: 600px;
-}
 .form {
-  display: inline-block;
   padding: 10px 10px 20px 15px;
-  margin: 0 0;
+  margin: 0 40%;
   background-color: #ffff44;
   border-radius: 15px;
   -webkit-border-radius: 15px;
