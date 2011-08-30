@@ -1,5 +1,6 @@
 <div id="hour-entry-list">
   <div id="enter-hours-link"><%= link_to 'Enter Hours', new_hour_path %></div>
+  <div id="hour-count">Total Hours: <%= hour_count %></div>
 
   <%= will_paginate %> <!-- Generates page listings for hour lists -->
   

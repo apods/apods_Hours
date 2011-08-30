@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
     # appropriate CSS files can be used
     # Special thanks to Jonathon Horsman
     # http://www.arctickiwi.com/blog/mobile-enable-your-ruby-on-rails-site-for-small-screens
-    MOBILE_BROWSERS = ["android", "ipod", "opera mini", "blackberry", "palm","hiptop","avantgo","plucker", "xiino","blazer","elaine", "windows ce; ppc;", "windows ce; smartphone;","windows ce; iemobile", "up.browser","up.link","mmp","symbian","smartphone", "midp","wap","vodafone","o2","pocket","kindle", "mobile","pda","psp","treo"]
+    MOBILE_BROWSERS = ["android", "ipod", "iphone", "opera mini", "blackberry", "palm","hiptop","avantgo","plucker", "xiino","blazer","elaine", "windows ce; ppc;", "windows ce; smartphone;","windows ce; iemobile", "up.browser","up.link","mmp","symbian","smartphone", "midp","wap","vodafone","o2","pocket","kindle", "mobile","pda","psp","treo"]
 
   def detect_browser
     agent = request.headers["HTTP_USER_AGENT"].downcase

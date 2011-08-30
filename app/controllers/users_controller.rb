@@ -10,7 +10,6 @@ class UsersController < ApplicationController
     if !signed_in?
       redirect_to login_path
     end
-    @hours = hour_count
   end
   
   def new
@@ -32,7 +31,6 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @hours = hour_count
     @button_text = 'Save changes!'
   end
   
@@ -47,15 +45,6 @@ class UsersController < ApplicationController
   end
   
   private
-    
-    def hour_count
-      hours = Hour.find_all_by_user_id(current_user.id, :select => :hours)
-      count = 0
-      hours.each do |hour|
-        count += hour.hours
-      end
-      count
-    end
     
     private
     
