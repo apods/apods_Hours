@@ -54,10 +54,10 @@ ul.navbar { margin: 0 6%; }
   -moz-border-radius: 10px;
 }
 .pagination {
-  margin: 3% 0;
-  font-size: 25px;
+  margin: 6% 0 3%;
+  font-size: 22px;
 }
-.pagination a { font-size: 25px; }
+.pagination a { font-size: 22px; }
 #hour-entry-list { margin: 0 20% 200px; }
 .hour-entry {
   margin: 3% 5%;
