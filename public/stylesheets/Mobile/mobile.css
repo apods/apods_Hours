@@ -92,7 +92,6 @@ ul.navbar { margin: 0 6%; }
 h1 { font-size: 30px; }
 body {
   background-color: #66ccff;
-  background-color: yellow;
   font-size: 20px;
 }
 body a {
@@ -101,7 +100,7 @@ body a {
 }
 .form {
   padding: 10px 10px 20px 15px;
-  margin: 0 40%;
+  margin: 0 5%;
   background-color: #ffff44;
   border-radius: 15px;
   -webkit-border-radius: 15px;
