@@ -55,8 +55,8 @@ ul.navbar { margin: 0 6%; }
 }
 #hour-entry-list { margin: 0 20% 200px; }
 .hour-entry {
-  margin: 17px 15%;
-  padding: 5px 20px 5px 20px;
+  margin: 3% 5%;
+  padding: 0.5% 23px 0.5% 27px;
   background-color: #ffff44;
   border: 8px;
   border-color: black;
@@ -78,23 +78,25 @@ ul.navbar { margin: 0 6%; }
   display: block;
   padding: 25px 0px 15px 0px;
 }
+.hour-entry .hour-link-bar a { font-size: 23px; }
 .hour-entry .hour-link-bar .hour-edit-link {
   display: inline-block;
   margin: 0px 10px 0px 0px;
 }
-.hour-entry .hour-link-bar .hour-edit-link a { font-size: 18px; }
 .hour-entry .hour-link-bar .hour-delete-link {
   display: inline-block;
   margin: 0px 0px 0px 10px;
 }
-.hour-entry .hour-link-bar .hour-delete-link a { font-size: 18px; }
 #login { margin-left: 7%; }
-#login-pn { width: 200px; }
-h1 { font-size: 25px; }
-body { background-color: #66ccff; }
+#login-pn, #login-pw { width: 200px; }
+h1 { font-size: 30px; }
+body {
+  background-color: #66ccff;
+  font-size: 20px;
+}
 body a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 27px;
 }
 .form {
   padding: 10px 10px 20px 15px;
