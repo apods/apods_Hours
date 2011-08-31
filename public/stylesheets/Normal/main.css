@@ -88,7 +88,7 @@ ul.navbar { margin: 0 6%; }
   margin: 0px 0px 0px 10px;
 }
 #login { margin-left: 7%; }
-#login-pn, #login-pw { width: 200px; }
+#login-pn, #login-pw { width: 90%; }
 h1 { font-size: 30px; }
 body {
   background-color: #66ccff;
