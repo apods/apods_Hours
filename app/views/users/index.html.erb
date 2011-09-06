@@ -1,4 +1,7 @@
 <div class="user-list">
+
+  <%= will_paginate %> <!-- Generates page listings for hour lists -->
+
   <%  @users.each do |user| %>
       <ul class="user">
         <li class="name">
@@ -8,11 +11,14 @@
         <div class="user-info">
           <li class="status">Status: <%= user.status || "None specified" %></li>
           <li class="user-hours">
-            Hours: <%= hour_count(user) %>
-            <%= link_to 'View Listing', :controller => :hours, :action => :admin_index %>
+            <div class="hour-count">Hours: <%= hour_count(user) %></div>
+            <div class="hours-link"><%= link_to 'View Listing', :controller => :hours, :action => :admin_index %></div>
            </li>
           <li class="email">Email: <%= user.email %></li>
         </div>
       </ul>
   <% end %>
+  
+  <%= will_paginate %> <!-- Generates page listings for hour lists -->
+  
 </div>

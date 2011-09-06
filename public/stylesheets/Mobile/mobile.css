@@ -110,6 +110,31 @@ ul.navbar { margin: 0 6%; }
 }
 #login { margin-left: 7%; }
 #login-pn, #login-pw { width: 90%; }
+.user-list { margin: 3% 20%; }
+.user {
+  background-color: #ffff44;
+  padding: 2% 7%;
+  margin: 3% 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.user li { margin: 1%; }
+.user .name { display: block; }
+.user .name .first-name { display: inline-block; }
+.user .name .last-name { display: inline-block; }
+.user .user-hours { display: block; }
+.user .user-hours .hour-count { display: inline-block; }
+.user .user-hours .hours-link {
+  display: inline-block;
+  margin-left: 40px;
+}
+.user .user-hours .hours-link a { font-size: inherit; }
+.user .user-info { margin-left: 4%; }
+.user-list {
+  margin-left: 1%;
+  margin-right: 1%;
+}
 h1 { font-size: 30px; }
 body {
   background-color: #66ccff;

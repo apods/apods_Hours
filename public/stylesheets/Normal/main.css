@@ -119,6 +119,13 @@ ul.navbar { margin: 0 6%; }
 .user .name { display: block; }
 .user .name .first-name { display: inline-block; }
 .user .name .last-name { display: inline-block; }
+.user .user-hours { display: block; }
+.user .user-hours .hour-count { display: inline-block; }
+.user .user-hours .hours-link {
+  display: inline-block;
+  margin-left: 40px;
+}
+.user .user-hours .hours-link a { font-size: inherit; }
 .user .user-info { margin-left: 4%; }
 h1 { font-size: 30px; }
 body {
