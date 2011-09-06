@@ -27,6 +27,8 @@ class User < ActiveRecord::Base
   
   EmailRegex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
+  default_scope :order => 'last_name ASC'
+  
   validates_presence_of :first_name, :last_name, :email, :peoplesoft_num, :password
   
   validates_length_of :first_name, :maximum => 32
