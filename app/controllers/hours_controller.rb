@@ -40,9 +40,13 @@ class HoursController < ApplicationController
     else
       flash[:error] = "Error, your entry was not deleted, please try again. " + 
                       "If you receive this message again, contact Gino Sanzi " + 
-                      "at eugene.sanzi@gmail.com"
+                      "at gino.sanzi@gmail.com"
     end
     redirect_to hours_path
+  end
+  
+  def admin_index
+    
   end
   
   private

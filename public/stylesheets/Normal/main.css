@@ -106,6 +106,20 @@ ul.navbar { margin: 0 6%; }
 }
 #login { margin-left: 7%; }
 #login-pn, #login-pw { width: 90%; }
+.user-list { margin: 3% 20%; }
+.user {
+  background-color: #ffff44;
+  padding: 2% 7%;
+  margin: 3% 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.user li { margin: 1%; }
+.user .name { display: block; }
+.user .name .first-name { display: inline-block; }
+.user .name .last-name { display: inline-block; }
+.user .user-info { margin-left: 4%; }
 h1 { font-size: 30px; }
 body {
   background-color: #66ccff;
@@ -115,6 +129,7 @@ body a {
   text-decoration: none;
   font-size: 27px;
 }
+ul { list-style-type: none; }
 .form {
   padding: 10px 10px 20px 15px;
   margin: 0 40%;

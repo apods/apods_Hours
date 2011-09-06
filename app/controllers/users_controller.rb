@@ -2,8 +2,10 @@ class UsersController < ApplicationController
   
   before_filter :require_login, :only => [:edit, :update, :show]
   before_filter :authorized_user, :only => [:edit, :update]
+  before_filter :authorized_admin, :only => :index
   
   def index
+    @users = User.all
   end
   
   def show
@@ -51,6 +53,10 @@ class UsersController < ApplicationController
     def authorized_user
       @user = User.find(params[:id])
       redirect_to root_path unless current_user?(@user)
+    end
+    
+    def authorized_admin
+      redirect_to root_path unless current_user.admin?
     end
     
 end

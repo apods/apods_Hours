@@ -1,0 +1,18 @@
+<div class="user-list">
+  <%  @users.each do |user| %>
+      <ul class="user">
+        <li class="name">
+            <div class="first-name"><%= user.first_name %></div>
+            <div class="last-name"><%= user.last_name %></div>
+        </li>
+        <div class="user-info">
+          <li class="status">Status: <%= user.status || "None specified" %></li>
+          <li class="user-hours">
+            Hours: <%= hour_count(user) %>
+            <%= link_to 'View Listing', :controller => :hours, :action => :admin_index %>
+           </li>
+          <li class="email">Email: <%= user.email %></li>
+        </div>
+      </ul>
+  <% end %>
+</div>
