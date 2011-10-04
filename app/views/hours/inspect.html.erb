@@ -1,0 +1,33 @@
+<div id="hour-entry-list">
+  <div id="enter-hours-link"><%= link_to 'Enter Hours', new_hour_path %></div>
+  <div id="hour-count">Total Hours: <%= hour_count %></div>
+  <div id="user-name-inspect">
+    <%= @user.first_name %>
+    <%= @user.last_name %>'s hours
+  </div>
+
+  <%= will_paginate %> <!-- Generates page listings for hour lists -->
+  
+  <% @hours.each do |record| %>
+    <div class="hour-entry">
+      <h3><div class="hour-event">Event: <%= record.event %></div></h3>
+      <div class="hour-time">Hours: <%= record.hours %></div>
+      <% if !record.date.nil? %>
+        <div class="hour-date">Date: <%= record.date %></div>
+      <% end %>
+      <% if !record.area_of_service.nil? %>
+        <div class="hour-area">Area of Service: <%= record.area_of_service %></div>
+      <% end %>
+      <% if !record.description.nil? and !record.description.blank? %>
+        <div class="hour-desc">Description: <%= record.description %></div>
+      <% end %>
+      <div class="hour-link-bar">
+        <!-- <div class="hour-edit-link"><%= link_to 'Edit', edit_hour_path(record) %></div>
+        <div class="hour-delete-link"><%= link_to 'Delete', record, :action => 'destroy', :method => 'delete', :confirm => 'Are you sure?' %></div> -->
+      </div>
+    </div>
+  <% end %>
+  
+  <%= will_paginate %> <!-- Generates page listings for hour lists -->
+  
+</div>

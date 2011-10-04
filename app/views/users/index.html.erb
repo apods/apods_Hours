@@ -12,7 +12,7 @@
           <li class="status">Status: <%= user.status || "None specified" %></li>
           <li class="user-hours">
             <div class="hour-count">Hours: <%= hour_count(user) %></div>
-            <div class="hours-link"><%= link_to 'View Listing', :controller => :hours, :action => :index, :id => user.id %></div>
+            <div class="hours-link"><%= link_to 'View Listing', :controller => :hours, :action => :inspect, :id => user.id %></div>
            </li>
           <li class="email">Email: <%= user.email %></li>
         </div>

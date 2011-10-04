@@ -64,6 +64,16 @@ ul.navbar { margin: 0 6%; }
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
+#user-name-inspect {
+  margin: 0 25%;
+  background-color: #ffff44;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  font-size: 26px;
+  text-align: center;
+}
 .pagination {
   margin: 3% 0;
   font-size: 22px;
