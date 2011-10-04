@@ -4,7 +4,8 @@ class HoursController < ApplicationController
   before_filter :authorized_user, :only => [:update, :destroy]
   
   def index
-    @hours = current_user.hours.paginate(:page => params[:page], :per_page => 10)
+    #@hours = current_user.hours.paginate(:page => params[:page], :per_page => 10)
+    @hours = User.find(params[:id]).hours.paginate(:page => params[:page], :per_page => 10)
   end
   
   def new
@@ -46,14 +47,14 @@ class HoursController < ApplicationController
   end
   
   def admin_index
-    
+    @hours = Hour.all
   end
   
   private
     
     def authorized_user
       @hour = Hour.find(params[:id])
-      redirect_to root_path unless current_user == (@hour.user)
+      redirect_to root_path unless current_user == (@hour.user) or current_user.admin?
     end
     
 end
